@@ -17,7 +17,7 @@ var SubtleHeartBeat = (function(){
 	Heart.prototype = {
 		
 		initialize: function(id, setContext){
-			this.id = id;
+			this.id = String(id);
 			if (setContext == null) setContext = true;
 			if (setContext) Heart.setContext(id, this);
 			this.reset();
